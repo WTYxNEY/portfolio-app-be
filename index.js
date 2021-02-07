@@ -15,7 +15,7 @@ dotenv.config();
 app.use(body.json({ limit: "30mb", extended: true }));
 app.use(cors());
 
-app.get((req, res) => {
+app.get('/',(req, res) => {
     res.send('Hello to portfolio API')
 })
 // use router
